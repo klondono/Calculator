@@ -9,7 +9,6 @@ namespace Calculator
             // Declare variables and then initialize to zero.
             double num1 = 0;
             double num2 = 0;
-
             // Display title as the C# console calculator app.
             Console.WriteLine("Calculator");
             Console.WriteLine("------------------------");
