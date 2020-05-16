@@ -54,7 +54,7 @@ namespace Calculator
             Console.WriteLine("Choose an option from the following list:");
             Console.WriteLine("u - Uppercase");
             Console.WriteLine("r - Reverse");
-            Console.WriteLine("pb - Print Backwards");
+            Console.WriteLine("p - Is Palindrome");
             Console.WriteLine("s - Letter Search");
             //Console.WriteLine("p - Palindrome");
             Console.Write("Your option? ");
@@ -73,9 +73,9 @@ namespace Calculator
                     result = strUtil.Reverse(stringToAlter);
                     Console.WriteLine($"Your result for: {stringToAlter} = " + result);
                     break;
-                case "pb":
-                    strUtil.PrintBackwards(stringToAlter);
-                    Console.WriteLine("Done.");
+                case "p":
+                    var yesNo = strUtil.IsPalindrome2(stringToAlter);
+                    Console.WriteLine($"Is {stringToAlter} a palindrome? " + yesNo);
                     break;
                 case "s":
                     Console.Write("Specify letter to search for:");
